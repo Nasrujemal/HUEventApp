@@ -38,13 +38,17 @@ HUEventApp is a native Android application for Haramaya University that helps st
 
 This project was developed as a university project for Haramaya University.
 ## Screenshots
-## User interface
+
+### Desktop
+
 <p align="center">
-  <img src="screenshots/users-page1.png" width="220"/>
-  <img src="screenshots/users-page.png" width="220"/>
-  <img src="screenshots/login-page.png" width="220"/>
+  <img src="screenshots/users-page1.png" width="800"/>
 </p>
-## Admin
+
+### Mobile
+
 <p align="center">
-  <img src="screenshots/admin-page.png" width="800"/>
+  <img src="screenshots/users-page.png" width="220"/>
+  <img src="screenshots/admin-page.png" width="220"/>
+  <img src="screenshots/login-page.png" width="220"/>
 </p>
