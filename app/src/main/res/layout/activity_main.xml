@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <!-- Custom Toolbar with University branding -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorInfo"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:elevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:contentDescription="University Logo"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="HU Events"
+                    android:textColor="@color/colorOnPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Glassmorphism Search Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/glassSurface"
+            app:strokeColor="@color/glassBorder"
+            app:strokeWidth="1dp"
+            android:animateLayoutChanges="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Search events"
+                    app:startIconDrawable="@android:drawable/ic_menu_search"
+                    app:startIconTint="@color/colorPrimary"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:hintTextColor="@color/colorPrimary"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/searchInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="16sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/filterChipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:singleSelection="true"
+                    app:chipSpacingHorizontal="8dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All"
+                        android:checked="true"
+                        app:chipBackgroundColor="@color/chip_background_color"
+                        app:chipStrokeColor="@color/colorPrimary"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/chip_text_color"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAcademic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Academic"
+                        app:chipBackgroundColor="@color/chip_background_color"
+                        app:chipStrokeColor="@color/colorPrimary"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/chip_text_color"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipCultural"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cultural"
+                        app:chipBackgroundColor="@color/chip_background_color"
+                        app:chipStrokeColor="@color/colorPrimary"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/chip_text_color"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"/>
+                        
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipSports"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sports"
+                        app:chipBackgroundColor="@color/chip_background_color"
+                        app:chipStrokeColor="@color/colorPrimary"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/chip_text_color"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"/>
+                        
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipEntertainment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entertainment"
+                        app:chipBackgroundColor="@color/chip_background_color"
+                        app:chipStrokeColor="@color/colorPrimary"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/chip_text_color"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipStudent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student-led"
+                        app:chipBackgroundColor="@color/chip_background_color"
+                        app:chipStrokeColor="@color/colorPrimary"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/chip_text_color"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/eventsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="12dp"
+        android:scrollbars="vertical"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        
+    <!-- Floating Action Button with improved styling and ripple effect -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        app:tint="@color/colorOnPrimary"
+        android:background="@drawable/fab_ripple"
+        app:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        android:stateListAnimator="@null"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="Add new event" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

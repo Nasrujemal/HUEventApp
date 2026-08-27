@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HUEventApp</string>
+    
+    <!-- Add any other strings you need -->
+    <string name="category_academic">Academic</string>
+    <string name="category_cultural">Cultural</string>
+    <string name="category_sports">Sports</string>
+    <string name="category_entertainment">Entertainment</string>
+</resources>

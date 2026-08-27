@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="colorBackground">#F5F7FA</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnBackground">#000000</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorError">#B00020</color>
+    <color name="colorActive">#22B062</color>
+    <color name="colorExpired">#F44336</color>
+    <color name="colorSuccess">#41C268</color>
+    <color name="colorWarning">#FFC107</color>
+    <color name="colorInfo">#2196F3</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorSecondaryVariant">#0288D1</color>
+    <color name="colorSecondary">#03A9F4</color>
+    <color name="colorPrimaryLight">#8E99F3</color>
+    
+    <!-- University branding colors -->
+    <color name="universityBlue">#2196F3</color>
+    <color name="universityYellow">#FFC107</color>
+    
+    <!-- Glassmorphism colors -->
+    <color name="glassSurface">#CCFFFFFF</color>
+    <color name="glassSurfaceDark">#99FFFFFF</color>
+    <color name="glassBorder">#33FFFFFF</color>
+    
+    <!-- Chip colors -->
+    <color name="chip_selected">#2196F3</color>
+    <color name="chip_unselected">#FFFFFF</color>
+    <color name="chip_text_selected">#FFFFFF</color>
+    <color name="chip_text_unselected">#000000</color>
+    <color name="glassShadow">#40000000</color>
+    
+    <!-- Gradient colors -->
+    <color name="gradientStart">#2196F3</color>
+    <color name="gradientCenter">#80FFFFFF</color>
+    <color name="gradientEnd">#FFC107</color>
+</resources>

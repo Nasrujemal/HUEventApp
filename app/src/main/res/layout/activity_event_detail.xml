@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:elevation="0dp"
+            app:navigationIcon="@drawable/ic_arrow_back">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Details"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- First Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/glassSurface"
+                app:strokeColor="@color/glassBorder"
+                app:strokeWidth="1dp"
+                android:stateListAnimator="@null">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/eventTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sample Title"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.01"
+                        android:alpha="0.95"
+                        android:textColor="@color/colorOnSurface"/>
+
+                    <TextView
+                        android:id="@+id/eventDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="May 1, 2025"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorOnSurface"
+                        android:drawablePadding="8dp"
+                        app:drawableStartCompat="@android:drawable/ic_menu_my_calendar"
+                        app:drawableTint="@color/colorPrimary"
+                        android:alpha="0.85"/>
+
+                    <TextView
+                        android:id="@+id/eventLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Main Auditorium"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorOnSurface"
+                        android:drawablePadding="8dp"
+                        app:drawableStartCompat="@android:drawable/ic_menu_mylocation"
+                        app:drawableTint="@color/colorPrimary"
+                        android:alpha="0.85"/>
+
+                    <TextView
+                        android:id="@+id/eventOrganizer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Student Council"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorOnSurface"
+                        android:drawablePadding="8dp"
+                        app:drawableStartCompat="@android:drawable/ic_menu_myplaces"
+                        app:drawableTint="@color/colorPrimary"
+                        android:alpha="0.85"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:id="@+id/eventCategory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Workshop"
+                            android:textSize="14sp"
+                            android:background="@drawable/bg_category"
+                            android:padding="8dp"
+                            android:textColor="@color/colorOnPrimary"/>
+
+                        <TextView
+                            android:id="@+id/eventStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="Upcoming"
+                            android:textSize="14sp"
+                            android:background="@drawable/bg_status"
+                            android:padding="8dp"
+                            android:textColor="@color/colorOnSurface"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Description Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorOnSurface"/>
+
+                    <TextView
+                        android:id="@+id/eventDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="This is a detailed description of the event."
+                        android:textSize="16sp"
+                        android:textColor="@color/colorOnSurface"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSetReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="Set reminder"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

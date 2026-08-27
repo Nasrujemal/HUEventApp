@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/colorBackground"
+    app:strokeColor="@color/glassBorder"
+    app:strokeWidth="1dp"
+    android:stateListAnimator="@null"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Event details with improved typography -->
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorOnSurface"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:letterSpacing="0.01"
+            android:alpha="0.95"/>
+
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorOnSurface"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:alpha="0.85"
+            android:drawablePadding="8dp"
+            app:drawableStartCompat="@android:drawable/ic_menu_my_calendar"
+            app:drawableTint="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/eventLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorOnSurface"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:alpha="0.85"
+            android:drawablePadding="8dp"
+            app:drawableStartCompat="@android:drawable/ic_menu_mylocation"
+            app:drawableTint="@color/colorPrimary"/>
+
+        <!-- Action buttons with improved styling -->
+        <LinearLayout
+            android:id="@+id/eventActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="end">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEditEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:layout_marginEnd="8dp"
+                app:cornerRadius="12dp"
+                android:textColor="@color/colorOnPrimary"
+                app:backgroundTint="@color/colorPrimary"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="1dp"
+                style="@style/Widget.MaterialComponents.Button"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeleteEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                app:cornerRadius="12dp"
+                android:textColor="@color/colorOnPrimary"
+                app:backgroundTint="@color/colorError"
+                app:strokeColor="@color/colorError"
+                app:strokeWidth="1dp"
+                style="@style/Widget.MaterialComponents.Button"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

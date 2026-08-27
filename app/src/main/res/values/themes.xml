@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Theme.HUEventApp definition moved to styles.xml -->
+
+    <style name="ShapeAppearance.HUEventApp.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.HUEventApp.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.HUEventApp.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <!-- Custom Card Style for Glassmorphism -->
+    <style name="Widget.HUEventApp.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="android:foreground">@drawable/glass_ripple_effect</item>
+        <item name="cardBackgroundColor">@color/colorSurface</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="strokeColor">@color/glassBorder</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Floating Action Button Style -->
+    <style name="Widget.HUEventApp.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="tint">@color/colorOnPrimary</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+    </style>
+</resources>
